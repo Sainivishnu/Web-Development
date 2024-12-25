@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-size: cover;
+    background-image:url('Rolls-Royce\ Unveils\ the\ Dawn\ Black\ Badge\ Before\ Goodwood.jpeg');
+    background-position: center;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: black;
+    color: antiquewhite;
+}
+
+.nav {
+    padding: 8px 12px;
+
+}
+
+.nav:hover {
+    background-color: rgb(85, 80, 80);
+    border-radius: 20px;
+}
+
+.search>input {
+    border-radius: 20px;
+    text-align: center;
+    width: auto;
+    height: 28px;
+}
+.search >input:hover{
+    background-color:  rgb(240, 236, 236);
+    color: white;
+}
+
+@media screen and (max-width : 600px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .nav {
+        padding: 10px 24px;
+    }
+}
+
+.main-contant {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-contant>h1{
+    align-items: center;
+}
+.main-contant>p{
+    align-items: center;  
+}
+.button{
+    padding: 8px;
+}
+.button1{
+    padding: 8px 10px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+}
+.button2{
+    padding: 8px 15px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+}
+.button1:hover{
+    background-color:  rgb(240, 236, 236);
+    color: black;
+    font-weight: bold;
+}
+.button2:hover{
+    background-color:  rgb(240, 236, 236);
+    color: black;
+    font-weight: bold;
+}
+footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    color: azure;
+    align-items: center;
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom:10px ;
+}
+.social-icons{
+    padding: 5px 8px;
+    margin: 5px;
+}
