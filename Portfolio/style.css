@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    min-height: 100vh;
+
+}
+
+.navbar {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 60px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
+    padding: 8px;
+    font-weight: bolder;
+    font-size: larger;
+    color: red;
+}
+
+.search>input {
+    border-radius: 10px;
+    text-align: center;
+    transition: .2s;
+}
+
+.search>input:hover {
+    border-color: orangered;
+}
+
+.nav {
+    display: flex;
+    font-weight: bold;
+    padding: 8px 30px;
+    margin: 2px;
+}
+
+.nav a {
+    color: black;
+    text-decoration: none;
+    transition: .5s;
+    border-bottom: 2px solid orangered;
+    width: 0%;
+}
+
+.nav a:hover {
+    color: orangered;
+    border-bottom: 2px solid orangered;
+    width: 100%;
+}
+
+@media screen and (max-width : 800px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .nav {
+        font-size: 16px;
+    }
+}
+
+.main-contant {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    width: 100%;
+    height: 100vh;
+}
+
+@media screen and (max-width : 800px) {
+    .main-contant {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+.left {
+    padding: 10px;
+}
+
+.left>img {
+    width: 350px;
+    border-radius: 900px;
+    filter: saturate(110%);
+    margin-left: -10px;
+}
+
+span {
+    color: orangered;
+}
+
+.right{
+    display: flex;
+   flex-direction: column;
+   padding: 8px;
+   margin: 10px;
+}
+
+button {
+    padding: 8px;
+    margin: 10px;
+    border-radius: 20px;
+    font-size: large;
+    border: none;
+    background-color: wheat;
+    transition: .5s;
+}
+
+button:hover {
+    background-color: orangered;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width : 360px) {
+    .left>img {
+        width: 300px;
+    }
+    .reght{
+        width: 300px;
+    }
+}
