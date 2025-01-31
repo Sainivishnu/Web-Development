@@ -1,0 +1,268 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.w{
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    min-height: 100vh;
+    transition: .8s;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 60px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
+    padding: 8px;
+    font-weight: bolder;
+    font-size: larger;
+    color:white;
+    mix-blend-mode: difference;
+}
+
+.search>input {
+    border-radius: 10px;
+    text-align: center;
+    transition: .2s;
+    width: 300px;
+    height: 40px;
+}
+
+.search>input:hover {
+    border-color: orangered;
+}
+
+.nav {
+    display: flex;
+    font-weight: bold;
+    padding: 8px 30px;
+    margin: 2px;
+}
+
+.nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    transition: .5s;
+    border-bottom: 2px solid orangered;
+    width: 0%;
+}
+
+.nav a:hover {
+    color: orangered;
+    border-bottom: 2px solid orangered;
+    width: 100%;
+}
+
+@media screen and (max-width : 800px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .nav {
+        font-size: 16px;
+    }
+}
+
+.login button{
+    padding: 8px;
+    margin: 10px;
+    border-radius: 20px;
+    font-size: large;
+    border: none;
+    background-color: wheat;
+    transition: .5s;
+}
+
+button:hover {
+    background-color: orangered;
+    color: white;
+    cursor: pointer;
+}
+
+.headline{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.headline h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:65px;
+    transition: .4s;
+}
+
+.headline h2:hover{
+    color: orangered;
+}
+
+.headline h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 55px;
+}
+
+.headline h3 span{
+    color: black;
+    transition: .4s;
+}
+
+.headline h3 span:hover{
+    color: orangered;
+}
+
+.headline p{
+    font-weight: bolder;
+    /* border-bottom: 2px solid orangered; */
+}
+
+
+.headline p:hover{
+    border-bottom: 2px solid orangered;
+}
+
+@media screen and (max-width : 680px) {
+    .headline{
+        width: 100%;
+        height:60vh;
+    }
+    .headline h2{
+        font-size: 35px;
+    }
+    .headline h3{
+        font-size: 25px;
+    }
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.page{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.cc{
+    color: white;
+    mix-blend-mode: difference;
+    padding: 10px;
+    font-size: xx-large;
+    font-weight: bolder;
+    align-items: center;
+    justify-content: center;
+    margin-left: 16px;
+}
+
+.card{
+    width: 400px;
+    height: 550px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:0px 5px 10px white ;
+    border: 2px solid white;
+    align-items: center;
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+}
+
+.content{
+    color: white;
+    mix-blend-mode: difference;
+    padding: 10px;
+}
+
+.content h3{
+    font-size: xx-large;
+    font-weight: bolder;
+    padding: 8px ;
+    margin: 4px;
+}
+
+.content p{
+    padding: 8px;
+    margin: 4px;
+    line-height: 1.3;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px ;
+    margin: 4px;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color:gray;
+    box-shadow: 0px 2px 4px white;
+    transition: .4s;
+}
+
+.content a{
+    color: black;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.btn:hover{
+     background-color: white;  
+}
+
+.btn2{
+    display: inline-block;
+    padding: 10px ;
+    margin: 4px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color:lightseagreen;
+    box-shadow: 0px 2px 4px white;
+    transition: .4s;
+}
+
+.btn2 a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+    color: white;
+    transition: .4s;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
